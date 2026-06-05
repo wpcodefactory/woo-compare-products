@@ -7,7 +7,6 @@
  * Author URI: https://woobewoo.com
  * WC requires at least: 3.4.0
  * WC tested up to: 10.8.1
- * Declare HPOS compatible: true
  * Text Domain: woo-compare-products
  * Domain Path: /languages
  **/

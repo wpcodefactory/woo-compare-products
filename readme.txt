@@ -7,7 +7,6 @@ Stable tag: 1.3.0
 Requires PHP: 7.2
 Requires at least: 5.0
 Requires WC at least: 3.4.0
-Declare HPOS compatible: true
 
 
 Let your clients compare products to make better purchasing decisions without distracting from looking through the shop! Pleasant to eye comparison table appears in a pop-up on same page user currently is, and amply shows pros and cons of each product in an illustrative and clear way.
