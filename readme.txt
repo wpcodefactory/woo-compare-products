@@ -80,7 +80,7 @@ We are always ready to collaborate with our users to widen the auditory! Please,
 = 1.3.0 =
  * Declare HPOS compatible
  * Tested up to Wordpress 7.0
- * Tested up to WooCommerce 7.5.0
+ * Tested up to WooCommerce 10.8.1
 
 = 1.2.8 =
  * Minor issues fix
