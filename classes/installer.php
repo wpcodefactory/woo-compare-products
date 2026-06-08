@@ -10,7 +10,7 @@ class installerWcp {
 		if(!$current_version)
 			self::$_firstTimeActivated = true;
 		/**
-		 * modules 
+		 * modules
 		 */
 		if (!dbWcp::exist("@__modules")) {
 			dbDelta(dbWcp::prepareQuery("CREATE TABLE IF NOT EXISTS `@__modules` (
@@ -35,7 +35,7 @@ class installerWcp {
 		}
 
 		/**
-		 *  modules_type 
+		 *  modules_type
 		 */
 		if(!dbWcp::exist("@__modules_type")) {
 			dbDelta(dbWcp::prepareQuery("CREATE TABLE IF NOT EXISTS `@__modules_type` (
@@ -116,7 +116,7 @@ class installerWcp {
 	}
 	static public function update() {
 		global $wpdb;
-		$wpPrefix = $wpdb->prefix; /* add to 0.0.3 Versiom */
+		$wpPrefix = $wpdb->prefix; /* add to 0.0.3 Version */
 		$currentVersion = get_option($wpPrefix. WCP_DB_PREF. 'db_version', 0);
 		if(!$currentVersion || version_compare(WCP_VERSION, $currentVersion, '>')) {
 			self::init( true );
