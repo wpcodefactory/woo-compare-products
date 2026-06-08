@@ -77,110 +77,110 @@ We are always ready to collaborate with our users to widen the auditory! Please,
 == Changelog ==
 
 = 1.3.0 - 08/06/2026 =
- * Dev - Declare HPOS compatible.
- * Tested up to: 7.0.
- * WC tested up to: 10.8.
+* Dev - Declare HPOS compatible.
+* Tested up to: 7.0.
+* WC tested up to: 10.8.
 
 = 1.2.8 =
- * Minor issues fix
+* Minor issues fix
 
 = 1.2.7 =
- * Change cdn url
- * Minor issues fix
+* Change cdn url
+* Minor issues fix
 
 = 1.2.6 =
- * Minor issues fix
+* Minor issues fix
 
 = 1.2.5 =
- * Minor issues fix
+* Minor issues fix
 
 = 1.2.4 =
- * Minor fix for woocommerce 3.9.3
+* Minor fix for woocommerce 3.9.3
 
 = 1.2.3 =
- * Code review
+* Code review
 
 = 1.2.2 =
- * Minor issues fix
+* Minor issues fix
 
 = 1.2.1 =
- * Updates for woocommerce 3.9.0
+* Updates for woocommerce 3.9.0
 
 = 1.2.0 =
- * Minor issues fix
+* Minor issues fix
 
 = 1.1.9 =
- * Fixed deleting from compare list
- * Added autoresize for popup
- * Minor issues fix
+* Fixed deleting from compare list
+* Added autoresize for popup
+* Minor issues fix
 
 = 1.1.8 =
- * Fix for Wordpress 5.3
- * Minor issues fix
+* Fix for Wordpress 5.3
+* Minor issues fix
 
 = 1.1.7 =
- * Code review
+* Code review
 
 = 1.1.6 =
- * Fix for theme OceanWP
- * Minor issues fix
+* Fix for theme OceanWP
+* Minor issues fix
 
 = 1.1.5 =
- * Fix for popular wordpress themes
- * Minor issues fix
+* Fix for popular wordpress themes
+* Minor issues fix
 
 = 1.1.4 =
- * Fix attributes slug to name
- * Minor issues fix
+* Fix attributes slug to name
+* Minor issues fix
 
 = 1.1.3 =
- * WooCommerce update test
- * Minor issues fix
+* WooCommerce update test
+* Minor issues fix
 
 = 1.1.2 =
- * Fixes for new wp translations
- * Hotfix in connectLang function
+* Fixes for new wp translations
+* Hotfix in connectLang function
 
 = 1.1.1 =
- * Code review
+* Code review
 
 = 1.1.0 =
- * Minor issues fix
+* Minor issues fix
 
 = 1.0.9 =
- * Fix Buy button name issue
- * Minor issues fix
+* Fix Buy button name issue
+* Minor issues fix
 
 = 1.0.8 =
- * Minor issues fix
+* Minor issues fix
 
 = 1.0.7 =
- * Code review
+* Code review
 
 = 1.0.6 =
- * Minor issues fix
+* Minor issues fix
 
 = 1.0.5 =
- * Code improvement
- * Minor issues fix
+* Code improvement
+* Minor issues fix
 
 = 1.0.4 =
- * Minor issues fix
- * Screenshots added
+* Minor issues fix
+* Screenshots added
 
 = 1.0.3 =
- * Minor issues fix
- * Code review
+* Minor issues fix
+* Code review
 
 = 1.0.2 =
- * Fixed multisite plugin activate.
- * Fixed field order list saving, when reActivate plugin.
- * Fixed tooltipstered classes.
- * Added tooltips.
- * Fixed some links.
- * Fixed popup table size.
- * Fixed popup style.
- * Added language files
+* Fixed multisite plugin activate.
+* Fixed field order list saving, when reActivate plugin.
+* Fixed tooltipstered classes.
+* Added tooltips.
+* Fixed some links.
+* Fixed popup table size.
+* Fixed popup style.
+* Added language files
 
 = 1.0.1 =
 * Release on wordpress.org
