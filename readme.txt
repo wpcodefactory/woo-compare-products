@@ -2,8 +2,8 @@
 Contributors: woobewoo.com
 Donate link: woobewoo.com
 Tags: woocommerce, woo, compare product, comparison products, compare, comparison
-Tested up to: 5.4
-Stable tag: 1.2.9
+Tested up to: 7.0
+Stable tag: 1.3.0
 
 
 Let your clients compare products to make better purchasing decisions without distracting from looking through the shop! Pleasant to eye comparison table appears in a pop-up on same page user currently is, and amply shows pros and cons of each product in an illustrative and clear way.
@@ -12,13 +12,13 @@ Let your clients compare products to make better purchasing decisions without di
 WooCommerce Product Сompare Plugin by WooBeWoo is a perfect way for making your products look attractive for customers. Let your clients easily compare products to make better purchasing decisions without distracting from looking through the shop! Pleasant to eye comparison table appears in a pop-up on same page user currently is, and amply shows pros and cons of each product in an illustrative and clear way. With adding as many WooCommerce products as wanted, and an ability to manage features to be displayed, you are making online shopping as comfortable as it has never been before!
 
 = Comparison plugin Features =
-* **Easy-to-use Drag and Drop Builder** 
-Set up your table just in couple of clicks. 
+* **Easy-to-use Drag and Drop Builder**
+Set up your table just in couple of clicks.
 * **Templates to choose from**
 Different presets for every taste.
 * **Automated WooCommerce features integration**
 No need to customize feels to compare at - we've already done everything for you!
-* **Unlimited Amount of Products to add** 
+* **Unlimited Amount of Products to add**
 Create as big tables, as your server can handle - our plugin doesn't have any limitations on numbers
 * **Draggable PopUp Table**
 Let your table appear in a compact popup window, so your clients won't be distracted from shop page
@@ -63,8 +63,8 @@ You can follow [tutorial](https://woobewoo.com/documentation/getting-started-wit
 
 [Here]( https://woobewoo.com/documentation/main-settings-comparison/) you can find all main settings of our WooCommerce Product Compare Plugin.
 
-= How can I translate a plugin? = 
- 
+= How can I translate a plugin? =
+
 We are always ready to collaborate with our users to widen the auditory! Please, read [this article] (http://woobewoo.com/documentation/translation/) if you'd like to translate the plugin and get the PRO version as a reward!
 
 == Screenshots ==
@@ -73,6 +73,11 @@ We are always ready to collaborate with our users to widen the auditory! Please,
 3. Compatison table on frontend
 
 == Changelog ==
+
+= 1.3.0 =
+ * Declare HPOS compatible
+ * Tested up to Wordpress 7.0
+ * Tested up to WooCommerce 10.8.1
 
 = 1.2.8 =
  * Minor issues fix
@@ -164,7 +169,7 @@ We are always ready to collaborate with our users to widen the auditory! Please,
 = 1.0.3 =
  * Minor issues fix
  * Code review
- 
+
 
 = 1.0.2 =
  * Fixed multisite plugin activate.

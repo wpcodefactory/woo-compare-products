@@ -7,6 +7,7 @@
     }
     if(!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
 
+
     define('WCP_PLUG_NAME', basename(dirname(__FILE__)));
     define('WCP_DIR', WP_PLUGIN_DIR. DS. WCP_PLUG_NAME. DS);
     define('WCP_TPL_DIR', WCP_DIR. 'tpl'. DS);
@@ -46,27 +47,27 @@
 
     define('WCP_DEFAULT', 'default');
     define('WCP_CURRENT', 'current');
-	
+
 	define('WCP_EOL', "\n");
-    
+
     define('WCP_PLUGIN_INSTALLED', true);
-    define('WCP_VERSION', '1.2.9');
+    define('WCP_VERSION', '1.3.0');
     define('WCP_USER', 'user');
-    
+
     define('WCP_CLASS_PREFIX', 'wcpc');
     define('WCP_FREE_VERSION', false);
 	define('WCP_TEST_MODE', true);
-    
+
     define('WCP_SUCCESS', 'Success');
     define('WCP_FAILED', 'Failed');
 	define('WCP_ERRORS', 'wcpErrors');
-	
+
 	define('WCP_ADMIN',	'admin');
 	define('WCP_LOGGED','logged');
 	define('WCP_GUEST',	'guest');
-	
+
 	define('WCP_ALL',		'all');
-	
+
 	define('WCP_METHODS',		'methods');
 	define('WCP_USERLEVELS',	'userlevels');
 	/**

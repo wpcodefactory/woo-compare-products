@@ -1,4 +1,10 @@
 <?php
+/**
+ * Woo Compare Products - Class frameWcp.
+ *
+ * @version 1.3.0
+ */
+
 class frameWcp {
     private $_modules = array();
     private $_tables = array();
@@ -16,7 +22,7 @@ class frameWcp {
 	private $_stylesInitialized = false;
 	private $_useFootAssets = false;
 	private $_ignoreJs = false;
-    
+
     private $_scriptsVars = array();
     private $_mod = '';
     private $_action = '';
@@ -24,10 +30,10 @@ class frameWcp {
      * Object with result of executing non-ajax module request
      */
     private $_res = null;
-    
+
     public function __construct() {
         $this->_res = toeCreateObjWcp('response', array());
-        
+
     }
     static public function getInstance() {
         static $instance;
@@ -99,7 +105,13 @@ class frameWcp {
             }
         }
     }
-    public function init() {
+
+	/**
+	 * init.
+	 *
+	 * @version 1.3.0
+	 */
+	public function init() {
         //$startTime = microtime(true);
         reqWcp::init();
         $this->_extractTables();
@@ -108,11 +120,11 @@ class frameWcp {
         $this->_initModules();
 
 		dispatcherWcp::doAction('afterModulesInit');
-		
+
 		modInstallerWcp::checkActivationMessages();
-		
+
         $this->_execModules();
-        
+
 		$addAssetsAction = $this->usePackAssets() && !is_admin() ? 'wp_footer' : 'init';
 
         add_action($addAssetsAction, array($this, 'addScripts'));
@@ -124,7 +136,22 @@ class frameWcp {
 
 		add_action('init', array($this, 'connectLang'));
         //$operationTime = microtime(true) - $startTime;
+
+	    add_action( 'before_woocommerce_init', array( $this, 'declareHPOSCompatibility' ) );
     }
+
+	/**
+	 * Declare HPOS (High-Performance Order Storage) compatibility.
+	 *
+	 * @version 1.3.0
+	 * @since 1.3.0
+	 */
+	public function declareHPOSCompatibility() {
+		if ( class_exists( 'Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', WCP_MAIN_FILE );
+		}
+	}
+
 	public function connectLang() {
 		load_plugin_textdomain(WCP_LANG_CODE, false, WCP_PLUG_NAME. '/languages/');
 	}
@@ -181,14 +208,14 @@ class frameWcp {
                         if(is_array($methods)) {
                             $lowerMethods = array_map('strtolower', $methods);          // Make case-insensitive
                             if(in_array($action, $lowerMethods)) {                      // Permission for this method exists
-                                if($currentUserPosition != $userlevel) 
+                                if($currentUserPosition != $userlevel)
                                     $res = false;
                                 break;
                             }
                         } else {
                             $lowerMethod = strtolower($methods);            // Make case-insensitive
                             if($lowerMethod == $action) {                   // Permission for this method exists
-                                if($currentUserPosition != $userlevel) 
+                                if($currentUserPosition != $userlevel)
                                     $res = false;
                                 break;
                             }
@@ -334,7 +361,7 @@ class frameWcp {
         }
         return $res;
     }
-    
+
     public function getModule($code) {
         return (isset($this->_modules[$code]) ? $this->_modules[$code] : NULL);
     }
@@ -363,10 +390,10 @@ class frameWcp {
             wp_enqueue_script($handle, $src, $deps, $ver, $in_footer);
         } else {
             $this->_scripts[] = array(
-                'handle' => $handle, 
-                'src' => $src, 
-                'deps' => $deps, 
-                'ver' => $ver, 
+                'handle' => $handle,
+                'src' => $src,
+                'deps' => $deps,
+                'ver' => $ver,
                 'in_footer' => $in_footer,
                 'vars' => $vars
             );
@@ -379,7 +406,7 @@ class frameWcp {
         if(!empty($this->_scripts)) {
             foreach($this->_scripts as $s) {
                 wp_enqueue_script($s['handle'], $s['src'], $s['deps'], $s['ver'], $s['in_footer']);
-                
+
                 if($s['vars'] || isset($this->_scriptsVars[$s['handle']])) {
                     $vars = array();
                     if($s['vars'])
@@ -424,7 +451,7 @@ class frameWcp {
 				'src' => $src,
 				'deps' => $deps,
 				'ver' => $ver,
-				'media' => $media 
+				'media' => $media
 			);
 		}
     }
@@ -438,13 +465,13 @@ class frameWcp {
     }
     //Very interesting thing going here.............
     public function loadPlugins() {
-        require_once(ABSPATH. 'wp-includes/pluggable.php'); 
+        require_once(ABSPATH. 'wp-includes/pluggable.php');
     }
     public function loadWPSettings() {
-        require_once(ABSPATH. 'wp-settings.php'); 
+        require_once(ABSPATH. 'wp-settings.php');
     }
 	public function loadLocale() {
-		require_once(ABSPATH. 'wp-includes/locale.php'); 
+		require_once(ABSPATH. 'wp-includes/locale.php');
 	}
     public function moduleActive($code) {
         return isset($this->_modules[$code]);

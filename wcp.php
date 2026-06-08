@@ -2,11 +2,11 @@
 /**
  * Plugin Name: Woo Compare Products
  * Description: Compare products
- * Version: 1.2.9
+ * Version: 1.3.0
  * Author: woobewoo.com
  * Author URI: https://woobewoo.com
  * WC requires at least: 3.4.0
- * WC tested up to: 4.3.1
+ * WC tested up to: 10.8.1
  * Text Domain: woo-compare-products
  * Domain Path: /languages
  **/
@@ -57,5 +57,5 @@
     frameWcp::_()->parseRoute();
     frameWcp::_()->init();
     frameWcp::_()->exec();
-	
+
 	//var_dump(frameWcp::_()->getActivationErrors()); exit();
